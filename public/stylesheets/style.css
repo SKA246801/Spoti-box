@@ -1,0 +1,48 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 1.4%;
+    background-color: #4ca2a9;
+    border: solid;
+    border-color: #385969;
+    border-width: .2vw;
+}
+
+label {
+    color: white;
+    font-size: 1.25vw;
+}
+
+.input {
+    padding: 1%;
+    margin: 1.5% 0;
+    width: 100%;
+    border: none;
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: 0 0 0 .2vw #385969;
+}
+
+.input:hover {
+    transform: scale(1.02);
+}
+
+.button {
+    font-size: 1.25vw;
+    background-color: white;
+    border: none;
+    margin-top: 1%;
+    padding: 2% 5%;
+    position: relative;
+    top: 50%;
+    left: 40%;
+}
+
+.button:hover {
+    box-shadow: 0 0 .2vw .2vw #385969;
+    transform: scale(1.03);
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoti-Box</title>
+    <link rel="stylesheet" type="text/css" href='/stylesheets/style.css'>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>
+                <a href="/" class="a-tag">Spoti-Box</a>
+            </h1>
+
+            <nav>
+                <ul>
+                    {{#if loggedIn}}
+                    <li>
+                        <a href="/" class="a-tag nav-button">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="/" class="a-tag nav-button">Logout</a>
+                    </li>
+                    {{else}}
+                    <li>
+                        <a href="/login" class="a-tag nav-button">Login</a>
+                    </li>
+                    {{/if}}
+                    <li>
+                        <a href="/" class="a-tag nav-button">Home</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+        {{{ body }}}
+    </main>
+</body>
+</html>
