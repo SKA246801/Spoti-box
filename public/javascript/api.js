@@ -2,15 +2,15 @@ var SpotifyWebApi = require('spotify-web-api-node');
 
 // credentials are optional
 var spotifyApi = new SpotifyWebApi({
-    clientId: 'fe69cc20a6e74584bce6cb310e7ad534',
-    clientSecret: 'ceecd22d58cc4f0abf0bfed4b420d9ea',
+    clientId: '',
+    clientSecret: '',
     redirectUri: 'http://localhost:3001'
 });
 
 
 var scopes = ['playlist-modify-private', 'playlist-modify-public'],
     redirectUri = 'http://localhost:3001',
-    clientId = 'fe69cc20a6e74584bce6cb310e7ad534',
+    clientId = '',
     state = '123';
 
 
