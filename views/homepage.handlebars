@@ -1,0 +1,39 @@
+  <header>
+    <div id="flex-container">
+      <h1 class="nes-container is-rounded is-centered is-dark">
+        <a href="/" class="nes-btn">Spoti-Box</a>
+      </h1>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      {{#if loggedIn}}
+        <div id="flex-container">
+          <div class="nes-container is-rounded is-centered">
+            <a href="/" class="nes-btn">Dashboard</a>
+          </div>
+        </div>
+        <li>
+          <a href="/" class="a-tag nav-button">Logout</a>
+        </li>
+      {{else}}
+        <div id="flex-container">
+
+          <div class="nes-container is-rounded is-centered">
+            <a href="/login" class="nes-btn">Log in with your Spotify Account</a>
+          </div>
+        </div>
+      {{/if}}
+      <div id="flex-container">
+        <div class="nes-container is-rounded is-centered">
+          <a href="/" class="nes-btn">About</a>
+        </div>
+      </div>
+    </ul>
+    <div>
+      {{#if loggedIn}}
+        <script src="/javascript/logout.js"></script>
+      {{/if}}
+    </div>
+  </nav>

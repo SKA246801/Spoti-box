@@ -1,9 +1,9 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
+} */
 
-header {
+/* header {
     background-color: #4ca2a9;
     display: flex;
     justify-content: space-between;
@@ -27,4 +27,25 @@ header nav ul {
 
 .a-tag:hover {
     color: #385969;
+} */
+body, html {
+  height: 100%;
+}
+.bg {
+  /* The image used */
+  background-image: url("/stylesheets/testimage.png");
+  /* public/stylesheets/testimage.png */
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1% 2%;
 }
