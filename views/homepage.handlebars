@@ -1,0 +1,55 @@
+{{!-- <ol class="post-list">
+    <li>
+        <article class="post">
+            <div class="title">
+                <a href="{{spotify_uri}}" target="_blank">{{title}}</a>
+                <span>({{spotify_uri}})</span>
+            </div>
+            <div class="meta">
+                {{vote_count}} point(s) by {{user.username}}
+            </div>
+        </article>
+    </li>
+</ol> --}}
+
+<div class="container">
+    <form action="">
+        <input type="hidden" id='hidden_token'>
+        <div class="col-sm-6 form-group row mt-4 px-0">
+            <label for="Song" class="form-label col-sm-2">Songs:</label>
+            <input name="" id="select_song" class="form-control form-control-sm col-sm-10"/>
+        </div>
+        <div class="col-sm-6 row form-group px-0">
+            <button type="submit" id="btn_submit" class="btn btn-success col-sm-12">Submit</button>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-sm-6 px-0">
+            <div class="list-group song-list">
+
+            </div>
+        </div>
+        <div class="offset-md-1 col-sm-4" id="song-detail">
+        </div>
+    </div>
+</div>
+
+<ol class="songs-list">
+    {{#each songs as |song|}}
+    <li>
+        <article class="song">
+            <div class="title">
+                <a href="{{song.song_uri}}" target="_blank">{{song.title}}</a>
+                <span>({{song.song_uri}})</span>
+            </div>
+            <div class="meta">
+            {{song}} point(s) by {{song.user.username}} 
+            <div>
+                <button type="button" class="upvote-btn">upvote</button>
+            </div>
+            </div>
+        </article>
+    </li>
+    {{/each}}
+</ol>
+
