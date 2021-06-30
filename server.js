@@ -5,9 +5,8 @@ const path = require('path')
 const exphbs = require('express-handlebars')
 const session = require('express-session')
 const SequelizeStore = require('connect-session-sequelize')(session.Store)
-const helpers = require('./utils/helpers')
 
-const hbs = exphbs.create({ helpers })
+const hbs = exphbs.create()
 const app = express()
 const PORT = process.env.PORT || 3001
 const sess = {
@@ -30,7 +29,46 @@ app.use(session(sess))
 // turn on routes
 app.use(routes)
 
+// messaging aspect
+const http = require('http')
+const server = http.createServer(app)
+const socketio = require('socket.io')
+const formatMessage = require('./utils/messages')
+const { userJoin, getCurrentUser, userLeave, getRoomUsers } = require('./utils/users')
+const io = socketio(server)
+const bot = 'Spoti-bot'
+
+io.on('connection', socket => {
+  socket.on('joinRoom', (username, room) => {
+    const user = userJoin(socket.id, username, room)
+    socket.join(user.room)
+
+    // Welcome user
+    socket.emit('message', formatMessage(bot, 'Welcome to the Chatroom'))
+
+    // when user connects
+    socket.broadcast.emit('message',  formatMessage(bot,`${user.user} has joined the chat`))
+  })
+  
+  // listen for chatMessage
+  socket.on('chatMessage', (msg) => {
+    const user = getCurrentUser(socket.id)
+    console.log(user)
+    io.emit('message', formatMessage(user[0].user, msg))
+  })
+
+  // when user disconnects
+  socket.on('disconnect', () => {
+    const user = userLeave(socket.id)
+    console.log(user);
+    if (user) {
+      io.emit('message',  formatMessage(bot,`${user[0].user} has left the chat`))
+    }
+  })
+
+})
+
 // turn on connection to db and server
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening on http://localhost:' + PORT))
+  server.listen(PORT, () => console.log('Now listening on http://localhost:' + PORT))
 })
