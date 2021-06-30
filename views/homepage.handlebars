@@ -1,39 +1,70 @@
-  <header>
-    <div id="flex-container">
+<div class="meta-flex">
+  <nav class="flex-column">
+    <header>
       <h1 class="nes-container is-rounded is-centered is-dark">
-        <a href="/" class="nes-btn">Spoti-Box</a>
+        <a href="/" class="nes-btn is-pink">Spoti-Box</a>
       </h1>
-    </div>
-  </header>
-
-  <nav>
-    <ul>
-      {{#if loggedIn}}
-        <div id="flex-container">
-          <div class="nes-container is-rounded is-centered">
-            <a href="/" class="nes-btn">Dashboard</a>
-          </div>
-        </div>
-        <li>
-          <a href="/" class="a-tag nav-button">Logout</a>
-        </li>
-      {{else}}
-        <div id="flex-container">
-
-          <div class="nes-container is-rounded is-centered">
-            <a href="/login" class="nes-btn">Log in with your Spotify Account</a>
-          </div>
-        </div>
-      {{/if}}
-      <div id="flex-container">
+    </header>
+    <!-- THIS IS THE LOGIN SECTION, IT GOES ON THE LEFT THIRD OF THE PAGE -->
+    {{#if loggedIn}}
         <div class="nes-container is-rounded is-centered">
-          <a href="/" class="nes-btn">About</a>
+          <a href="/" class="nes-btn">Dashboard</a>
         </div>
+      <li>
+        <a href="/" class="a-tag nav-button">Logout</a>
+      </li>
+    {{else}}
+        <div class="nes-container is-rounded is-centered is-dark">
+          <a type="button" class="nes-btn is-pink" href="/login">Log in with your Spotify Account</a>
+        </div>
+    {{/if}}
+      <div>
+        <a href="/" class="nes-btn is-pink">About</a>
       </div>
-    </ul>
     <div>
       {{#if loggedIn}}
         <script src="/javascript/logout.js"></script>
       {{/if}}
     </div>
   </nav>
+
+  <!-- THE MIDDLE SECTION OF THE PAGE WITH THE SINGLE SONG ADD AT A TIME DROPDOWN MENU GOES HERE: -->
+  <section class="flex-column">
+      <form action="">
+        <input type="hidden" id='hidden_token'>
+        <div class="flex-column">
+          <label for="Genre" class="nes-container is-rounded is-centered is-pink">Genre:</label>
+          <div class="nes-select">
+            <select name="" id="select_genre" class="is-pink">
+              <option value="">Select...</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex-column">
+          <label for="Genre" class="nes-container is-rounded is-centered is-pink">Playlists:</label>
+          <div class="nes-select">
+            <select name="" id="select_playlist" class="is-pink">
+              <option value="">Select...</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex-column">
+          <button type="submit" id="btn_submit" class="btn btn-success nes-btn is-pink">Search</button>
+        </div>
+        <div class="flex-column">
+          <button type="submit" id="btn_playlist" class="btn btn-success nes-btn is-pink">Generate Playlist</button>
+        </div>
+      </form>
+  </section>
+
+<!-- THE FINAL SECTION OF THE PAGE GOES HERE AND IT SHOWS THE PLAYLIST ON THE RIGHT -->
+<section class="flex-column">
+  <div class="row">
+    <div class="col-sm-6 px-0">
+      <div class="list-group song-list"></div>
+    </div>
+    <div class="offset-md-1 col-sm-4" id="song-detail"></div>
+    <div class="col-sm-6 form-group row px-0" id="generated_playlist"></div>
+  </div>
+</section>
+</div>

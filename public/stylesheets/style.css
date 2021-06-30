@@ -1,39 +1,9 @@
-/* * {
-    margin: 0;
-    padding: 0;
-} */
-
-/* header {
-    background-color: #4ca2a9;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 1% 2%;
-}
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    list-style: none;
-}
-
-.a-tag {
-    color: black;
-    text-decoration: none;
-    padding: 0 2vw;
-}
-
-.a-tag:hover {
-    color: #385969;
-} */
 body, html {
   height: 100%;
 }
 .bg {
   /* The image used */
-  background-image: url("/stylesheets/testimage.png");
+  background-image: url("/stylesheets/background_main.png");
   /* public/stylesheets/testimage.png */
   /* Full height */
   height: 100%;
@@ -42,10 +12,37 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#flex-container {
-  display: flex;
+.is-pink {
+    color: #407777;
+    border-color: #407777;
+    background-color: #eff2c0;
+    shadow-color: #bea57d;
+  }
+
+/* .flex-container {
+  flex-flow: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 1% 2%;
+  align-content: center;
+} */
+
+.meta-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-style: solid;
+}
+
+.flex-column {
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+  flex-grow: 1;
+  flex-basis: 33%;
+  padding: 1% 2%;
+  border-style: solid;
 }
