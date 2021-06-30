@@ -54,7 +54,7 @@ io.on('connection', socket => {
   socket.on('chatMessage', (msg) => {
     const user = getCurrentUser(socket.id)
     console.log(user)
-    io.emit('message', formatMessage(user[0].user, msg))
+    io.emit('message', formatMessage(user.user, msg))
   })
 
   // when user disconnects
