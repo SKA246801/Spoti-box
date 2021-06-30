@@ -1,63 +1,63 @@
-<div class=“meta-flex”>
-<div class=‘flex-column’>
-        <div id=‘messages-box’ class=“is-pink”>
-            <ul class=“messages is-pink”>
+<div class="meta-flex">
+<div class='flex-column'>
+        <div id='messages-box' class="is-pink">
+            <ul class="messages is-pink">
             </ul>
         </div>
-        <form id=“message-form” class=‘form’>
-            <div class=‘form-group’>
-                <i id=“icon-type”></i>
-                <p class=“typing”></p>
-                <div class=‘message-input nes-input’>
-                    <input autofocus type=“text” id=‘messageBox’ class=‘input’ name=‘message’ class=“message”>
+        <form id="message-form" class='form'>
+            <div class='form-group'>
+                <i id="icon-type"></i>
+                <p class="typing"></p>
+                <div class='message-input nes-input'>
+                    <input autofocus type="text" id='messageBox' class='input' name='message' class="message">
                 </div>
             </div>
-            <div class=“nes-container”>
-                <button class=“nes-btn is-pink button”>Submit</button>
+            <div class="nes-container">
+                <button class="nes-btn is-pink button">Submit</button>
             </div>
         </form>
 </div>
 <!-- THE MIDDLE SECTION OF THE PAGE WITH THE SINGLE SONG ADD AT A TIME DROPDOWN MENU GOES HERE: -->
-  <section class=“flex-column”>
-      <form action=“”>
-        <input type=“hidden” id=‘hidden_token’>
-        <div class=“flex-column”>
-          <label for=“Genre” class=“nes-container is-rounded is-centered is-pink”>Genre:</label>
-          <div class=“nes-select”>
-            <select name=“” id=“select_genre” class=“is-pink”>
-              <option value=“”>Select...</option>
+  <section class="flex-column">
+      <form action="">
+        <input type="hidden" id='hidden_token'>
+        <div class="flex-column">
+          <label for="Genre" class="nes-container is-rounded is-centered is-pink">Genre:</label>
+          <div class="nes-select">
+            <select name="" id="select_genre" class="is-pink">
+              <option value="">Select...</option>
             </select>
           </div>
         </div>
-        <div class=“flex-column”>
-          <label for=“Genre” class=“nes-container is-rounded is-centered is-pink”>Playlists:</label>
-          <div class=“nes-select”>
-            <select name=“” id=“select_playlist” class=“is-pink”>
-              <option value=“”>Select...</option>
+        <div class="flex-column">
+          <label for="Genre" class="nes-container is-rounded is-centered is-pink">Playlists:</label>
+          <div class="nes-select">
+            <select name="" id="select_playlist" class="is-pink">
+              <option value="">Select...</option>
             </select>
           </div>
         </div>
-        <div class=“flex-column”>
-          <button type=“submit” id=“btn_submit” class=“btn btn-success nes-btn is-pink”>Search</button>
+        <div class="flex-column">
+          <button type="submit" id="btn_submit" class="btn btn-success nes-btn is-pink">Search</button>
         </div>
-        <div class=“flex-column”>
-          <button type=“submit” id=“btn_playlist” class=“btn btn-success nes-btn is-pink”>Generate Playlist</button>
+        <div class="flex-column">
+          <button type="submit" id="btn_playlist" class="btn btn-success nes-btn is-pink">Generate Playlist</button>
         </div>
       </form>
   </section>
 <!-- THE FINAL SECTION OF THE PAGE GOES HERE AND IT SHOWS THE PLAYLIST ON THE RIGHT -->
-<section class=“flex-column”>
-  <div class=“row”>
-    <div class=“”>
-      <div class=“list-group song-list”></div>
+<section class="flex-column">
+  <div class="row">
+    <div class="">
+      <div class="list-group song-list"></div>
     </div>
-    <div class=“” id=“song-detail”></div>
-    <div class=“” id=“generated_playlist”></div>
+    <div class="" id="song-detail"></div>
+    <div class="" id="generated_playlist"></div>
   </div>
 </section>
 </div>
-<script src=“https://cdnjs.cloudflare.com/ajax/libs/query-string/7.0.1/index.min.js” integrity=“sha512-hs6211OQsgsotrLyrc+5nIuc0Ht/6ioUpBRzTe+g1xFjYkAo5AYJKNQl6eD5WZt2Lv6HHEEg0aYYqTuFF34ALg==” crossorigin=“anonymous” referrerpolicy=“no-referrer”></script>
-<script src=“https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.min.js”></script>
-<script src=“https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js”></script>
-<script src=“https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js” integrity=“sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==” crossorigin=“anonymous” referrerpolicy=“no-referrer”></script>
-<script src=“/javascript/message.js”></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/query-string/7.0.1/index.min.js" integrity="sha512-hs6211OQsgsotrLyrc+5nIuc0Ht/6ioUpBRzTe+g1xFjYkAo5AYJKNQl6eD5WZt2Lv6HHEEg0aYYqTuFF34ALg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/javascript/message.js"></script>

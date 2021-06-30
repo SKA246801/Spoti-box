@@ -3,7 +3,7 @@ body, html {
 }
 .bg {
   /* The image used */
-  background-image: url(“/stylesheets/background_main.png”);
+  background-image: url("/stylesheets/background_main.png");
   /* public/stylesheets/testimage.png */
   /* Full height */
   height: 100%;
@@ -16,7 +16,7 @@ body, html {
     color: #407777;
     border-color: #407777;
     background-color: #EFF2C0;
-    shadow-color: #BEA57D;
+    /* shadow-color: #BEA57D; */
   }
 /* .flex-container {
   flex-flow: row;
@@ -32,7 +32,7 @@ body, html {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: flex-start;
-  border-style: solid;
+  /* border-style: solid; */
 }
 .flex-column {
   flex-flow: column nowrap;
@@ -41,7 +41,7 @@ body, html {
   flex-grow: 1;
   flex-basis: 33%;
   padding: 1% 2%;
-  border-style: solid;
+  /* border-style: solid; */
 }
 .form {
   margin: auto;
