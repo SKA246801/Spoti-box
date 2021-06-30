@@ -10,7 +10,7 @@ res.redirect('https://accounts.spotify.com/authorize' +
   '?response_type=code' +
   '&client_id=' + '91a104101faa4f9ebf1e114f0611001b' +
   (scopes ? '&scope=' + encodeURIComponent(scopes) : '') +
-  '&redirect_uri=' + encodeURIComponent('https://protected-bastion-55262.herokuapp.com/name'));
+  '&redirect_uri=' + encodeURIComponent('https://ancient-harbor-80018.herokuapp.com/name'));
 })
 
 router.get('/name', (req, res) => {

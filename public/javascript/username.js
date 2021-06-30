@@ -13,7 +13,7 @@ async function createUsername(e) {
         })
 
         if (response.ok) {
-            const url = ('https://protected-bastion-55262.herokuapp.com/chatroom')
+            const url = ('https://ancient-harbor-80018.herokuapp.com/chatroom')
             const user = '?username=' + username
             document.location.replace(url + user)
         } else {
