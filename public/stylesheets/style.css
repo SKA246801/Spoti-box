@@ -46,3 +46,91 @@ body, html {
   padding: 1% 2%;
   border-style: solid;
 }
+
+.form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 0 3% 4% 2%;
+  background-color: gray;
+}
+
+#name-form {
+  background-color: #4ca2a9;
+  margin-top: 2%;
+}
+
+#title {
+  color: white;
+  text-align: center;
+  font-size: 1.7vw
+}
+
+.container {
+  width: 40%;
+  margin-top: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #4ca2a9;
+}
+
+.messages {
+  max-height: 65vh;
+  overflow: auto;
+  background-color: white;
+  width: 95%;
+  margin: 0 auto 1% auto;
+  padding: 0;
+}
+
+.new-messages {
+  font-size: 1.4vw;
+  list-style: none;
+  border: .1vw solid gray;
+}
+
+#username {
+  margin-bottom: 4%;
+}
+
+.input {
+  padding: 1%;
+  margin: 1.5% auto;
+  width: 100%;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0 .2vw #385969;
+}
+
+.input:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 0 .2vw #385969;
+}
+
+#name-button {
+  background-color: #4ca2a9;
+}
+
+.button-div {
+  margin-top: 2%;
+}
+
+.button {
+  text-decoration: none;
+  font-size: 1.4vw;
+  color: white;
+  background-color: gray;
+  border: none;
+  padding: 2% 5%;
+  position: relative;
+  left: 40%;
+}
+
+.button:hover {
+  box-shadow: 0 0 .2vw .2vw #385969;
+  cursor: pointer;
+}
