@@ -1,19 +1,20 @@
-<div class='container'>
-        <div id='messages-box'>
-            <ul class="messages">
-                
+<div class="meta-flex">
+
+<div class='flex-column'>
+        <div id='messages-box' class="is-pink">
+            <ul class="messages is-pink">
             </ul>
         </div>
         <form id="message-form" class='form'>
             <div class='form-group'>
                 <i id="icon-type"></i>
                 <p class="typing"></p>
-                <div class='message-input'>
+                <div class='message-input nes-input'>
                     <input autofocus type="text" id='messageBox' class='input' name='message' class="message">
                 </div>
             </div>
-            <div>
-                <button class="button">Submit</button>
+            <div class="nes-container">
+                <button class="nes-btn is-pink button">Submit</button>
             </div>
         </form>
 </div>
@@ -50,15 +51,14 @@
 <!-- THE FINAL SECTION OF THE PAGE GOES HERE AND IT SHOWS THE PLAYLIST ON THE RIGHT -->
 <section class="flex-column">
   <div class="row">
-    <div class="col-sm-6 px-0">
+    <div class="">
       <div class="list-group song-list"></div>
     </div>
-    <div class="offset-md-1 col-sm-4" id="song-detail"></div>
-    <div class="col-sm-6 form-group row px-0" id="generated_playlist"></div>
+    <div class="" id="song-detail"></div>
+    <div class="" id="generated_playlist"></div>
   </div>
 </section>
 </div>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/query-string/7.0.1/index.min.js" integrity="sha512-hs6211OQsgsotrLyrc+5nIuc0Ht/6ioUpBRzTe+g1xFjYkAo5AYJKNQl6eD5WZt2Lv6HHEEg0aYYqTuFF34ALg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>

@@ -53,7 +53,7 @@ body, html {
   flex-direction: column;
   width: 90%;
   padding: 0 3% 4% 2%;
-  background-color: gray;
+  background-color: #eff2c0;
 }
 
 #name-form {
@@ -64,7 +64,7 @@ body, html {
 #title {
   color: white;
   text-align: center;
-  font-size: 1.7vw
+  font-size: .9vw
 }
 
 .container {
@@ -76,16 +76,16 @@ body, html {
 }
 
 .messages {
-  max-height: 65vh;
+  max-height: 45vh;
   overflow: auto;
-  background-color: white;
+  background-color: #eff2c0;
   width: 95%;
   margin: 0 auto 1% auto;
   padding: 0;
 }
 
 .new-messages {
-  font-size: 1.4vw;
+  font-size: .7vw;
   list-style: none;
   border: .1vw solid gray;
 }
@@ -120,14 +120,7 @@ body, html {
 }
 
 .button {
-  text-decoration: none;
-  font-size: 1.4vw;
-  color: white;
-  background-color: gray;
-  border: none;
-  padding: 2% 5%;
-  position: relative;
-  left: 40%;
+
 }
 
 .button:hover {
