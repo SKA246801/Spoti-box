@@ -88,7 +88,7 @@ const APIController = (function() {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer ' + 'BQA4z3cmMh8d8pJLWfoqEZaRQkGrhviNp1FTg6sYoqVuAB2AeBPsacv2gnex9nrbkSPQNRkpNDQFA9AvgOC5SNuEXO5Dz0kHIeYyh3rERk2qyBrIq5Hdc8HmRXj-3DztELr5vUqo7ASVrkrpGLhR7mtRmtsHpjZpJugx-BW0sdBVlvJwDRkHdv5apC6aYpZiVVk6-JqBSoYCcp3-XupdJURmWE1tyhe0TNg41kjlSpANhuAC8iGx6xlcHSk'
-        
+
       }
     })
 
@@ -106,7 +106,7 @@ const APIController = (function() {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer ' + 'BQD6yRbI5KDy4PBiHh1FyFgsrb5QBmAnhignDDjQHJKr_Ybkrf0iJmwl70POWbNexICJSV2Wheu5As5E1F6c1He-Ir8OwPCfuaAFOUZkYPkjP-SCqZn9gk8HKt8dZbSkwJVSf0fGmOLNtOcj4X1g8S6GVtwqsOb7jLS_Pgsd6rmCNLK1PM3lsbgMF_0LZKL8aygPg685cRRkGXJCz5aqvAAAdeL7tBK7j-w3yyzH0r3Q5SoI00WtWeWlWYc'
-        
+
       },
       body: JSON.stringify({
         'uris': uris
@@ -192,8 +192,9 @@ const UIController = (function() {
 
     // need method to create a track list group item
     createTrack(id, name) {
-      const html = `<a href="#" class="list-group-item list-group-item-action list-group-item-light" id="${id}">${name}</a>`;
-      document.querySelector(DOMElements.divSonglist).insertAdjacentHTML('beforeend', html);
+      // const html = `<a href="#" class="list-group-item list-group-item-action list-group-item-light" id="${id}">${name}</a>`
+      const html = `<a href="#" class="nes-btn is-pink" id="${id}">${name}</a>`
+      document.querySelector(DOMElements.divSonglist).insertAdjacentHTML('beforeend', html)
     },
 
 
@@ -202,15 +203,15 @@ const UIController = (function() {
       const detailPlaylist = document.createElement('p');
       detailPlaylist.innerHTML =
         `
-            <div class="row col-sm-12 px-0">
+            <div class="nes-btn is-pink">
                 <label for="Genre" class="form-label col-sm-12">${title}:</label>
             </div>
-            <div class="row col-sm-12 px-0">
-                <label for="artist" class="form-label col-sm-12">By ${artist}:</label>
+            <div class="nes-btn is-pink">
+                <label for="artist" class="form-label col-sm-12">By ${artist}</label>
             </div>
-            `;
+            `
 
-      document.body.appendChild(detailPlaylist);
+      document.getElementById('generatedPlaylist').appendChild(detailPlaylist)
 
     },
 
