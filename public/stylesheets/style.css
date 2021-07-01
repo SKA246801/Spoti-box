@@ -15,10 +15,9 @@ body, html {
 .is-pink {
     color: #407777;
     border-color: #407777;
-    background-color: #eff2c0;
-    shadow-color: #bea57d;
+    background-color: #EFF2C0;
+    /* shadow-color: #BEA57D; */
   }
-
 /* .flex-container {
   flex-flow: row;
   justify-content: center;
@@ -27,16 +26,14 @@ body, html {
   padding: 1% 2%;
   align-content: center;
 } */
-
 .meta-flex {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: flex-start;
-  border-style: solid;
+  /* border-style: solid; */
 }
-
 .flex-column {
   flex-flow: column nowrap;
   justify-content: center;
@@ -44,85 +41,82 @@ body, html {
   flex-grow: 1;
   flex-basis: 33%;
   padding: 1% 2%;
-  border-style: solid;
+  /* border-style: solid; */
 }
-
 .form {
   margin: auto;
   display: flex;
   flex-direction: column;
   width: 90%;
   padding: 0 3% 4% 2%;
+<<<<<<< HEAD
   background-color: #eff2c0;
+=======
+  background-color: #EFF2C0;
+>>>>>>> 90a81baaeafb6d3189be4e0e60ef120cd588b00a
 }
-
 #name-form {
-  background-color: #4ca2a9;
+  background-color: #4CA2A9;
   margin-top: 2%;
 }
-
 #title {
   color: white;
   text-align: center;
   font-size: .9vw
 }
-
 .container {
   width: 40%;
   margin-top: 2%;
   padding-top: 1%;
   padding-bottom: 1%;
-  background-color: #4ca2a9;
+  background-color: #4CA2A9;
 }
-
 .messages {
   max-height: 45vh;
   overflow: auto;
+<<<<<<< HEAD
   background-color: #eff2c0;
+=======
+  background-color: #EFF2C0;
+>>>>>>> 90a81baaeafb6d3189be4e0e60ef120cd588b00a
   width: 95%;
   margin: 0 auto 1% auto;
   padding: 0;
 }
-
 .new-messages {
   font-size: .7vw;
   list-style: none;
   border: .1vw solid gray;
 }
-
 #username {
   margin-bottom: 4%;
 }
-
 .input {
   padding: 1%;
   margin: 1.5% auto;
   width: 100%;
   border: none;
 }
-
 .input:focus {
   outline: none;
   box-shadow: 0 0 0 .2vw #385969;
 }
-
 .input:hover {
   transform: scale(1.02);
   box-shadow: 0 0 0 .2vw #385969;
 }
-
 #name-button {
-  background-color: #4ca2a9;
+  background-color: #4CA2A9;
 }
-
 .button-div {
   margin-top: 2%;
 }
-
 .button {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 90a81baaeafb6d3189be4e0e60ef120cd588b00a
 }
-
 .button:hover {
   box-shadow: 0 0 .2vw .2vw #385969;
   cursor: pointer;

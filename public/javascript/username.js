@@ -13,7 +13,7 @@ async function createUsername(e) {
         })
 
         if (response.ok) {
-            const url = ('http://localhost:3001/chatroom')
+            const url = ('https://ancient-harbor-80018.herokuapp.com/chatroom')
             const user = '?username=' + username
             document.location.replace(url + user)
         } else {

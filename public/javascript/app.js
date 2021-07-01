@@ -87,7 +87,8 @@ const APIController = (function() {
       }),
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + 'BQANJHG_WBhYs-X4Pc4FJEtIl6Ll7pKwiulVEeFzjPEkvmYNJztm1SEZMdsdsNzs7tT1y_HBtVr69PtDFeKMz-t_fhiAzA0j-71n7Rhhyq7IBYfaJ85_YSwI2iNcMpGVRxWzPHoP32P7EkiG-uSmS5sZ8ZmL37oqghDav0jIdXM2-_kkEbWqrGomiWbtcOzt8S3rFjt78qJMPgWj7N-mLhX7lL1lUumWKex2-ZWJyhzEygCNhL9C2dZaHHI'
+        'Authorization': 'Bearer ' + 'BQA4z3cmMh8d8pJLWfoqEZaRQkGrhviNp1FTg6sYoqVuAB2AeBPsacv2gnex9nrbkSPQNRkpNDQFA9AvgOC5SNuEXO5Dz0kHIeYyh3rERk2qyBrIq5Hdc8HmRXj-3DztELr5vUqo7ASVrkrpGLhR7mtRmtsHpjZpJugx-BW0sdBVlvJwDRkHdv5apC6aYpZiVVk6-JqBSoYCcp3-XupdJURmWE1tyhe0TNg41kjlSpANhuAC8iGx6xlcHSk'
+        
       }
     })
 
@@ -104,7 +105,8 @@ const APIController = (function() {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + 'BQCC4dSn1LBHXceH2KKyuRntET17ECLO42-eqCfy3cGzETGwhviKi3OCGt9iuzAHT6hDs_8Ve7_2OzkcYh6hVsqZqJzkgRiIza4Zoxuv6mCWhiW7QwtBpuJphCH7oKTzALJxBXhJk0eItX15s2l9vVrcyajzpNqMUHuSESjSOUJ-u0BZmASHJ9K2yEfPuAbAj8j2EN5dFgfoJ4vCDWnMHDXgXihdaAxPtf-H_txTV7-qJCMyaYmLmJV_51M'
+        'Authorization': 'Bearer ' + 'BQD6yRbI5KDy4PBiHh1FyFgsrb5QBmAnhignDDjQHJKr_Ybkrf0iJmwl70POWbNexICJSV2Wheu5As5E1F6c1He-Ir8OwPCfuaAFOUZkYPkjP-SCqZn9gk8HKt8dZbSkwJVSf0fGmOLNtOcj4X1g8S6GVtwqsOb7jLS_Pgsd6rmCNLK1PM3lsbgMF_0LZKL8aygPg685cRRkGXJCz5aqvAAAdeL7tBK7j-w3yyzH0r3Q5SoI00WtWeWlWYc'
+        
       },
       body: JSON.stringify({
         'uris': uris
