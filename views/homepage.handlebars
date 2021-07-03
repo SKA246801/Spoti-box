@@ -5,25 +5,10 @@
         <a href="/" class="nes-btn is-pink">Spoti-Box</a>
       </h1>
     </header>
-    <!-- THIS IS THE LOGIN SECTION, IT GOES ON THE LEFT THIRD OF THE PAGE -->
-    {{#if loggedIn}}
-        <div class="nes-container is-rounded is-centered">
-          <a href="/" class="nes-btn">Dashboard</a>
-        </div>
-      <li>
-        <a href="/" class="a-tag nav-button">Logout</a>
-      </li>
-    {{else}}
         <div class="nes-container is-rounded is-centered is-dark">
           <a type="button" class="nes-btn is-pink" href="/login">Log in with your Spotify Account</a>
         </div>
-    {{/if}}
       <div>
         <a href="/" class="nes-btn is-pink">About</a>
       </div>
-    <div>
-      {{#if loggedIn}}
-        <script src="/javascript/logout.js"></script>
-      {{/if}}
-    </div>
   </nav>

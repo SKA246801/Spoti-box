@@ -2,12 +2,8 @@ body, html {
   height: 100%;
 }
 .bg {
-  /* The image used */
   background-image: url("/stylesheets/background_main.png");
-  /* public/stylesheets/testimage.png */
-  /* Full height */
   height: 100%;
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,23 +12,13 @@ body, html {
     color: #407777;
     border-color: #407777;
     background-color: #EFF2C0;
-    /* shadow-color: #BEA57D; */
-  }
-/* .flex-container {
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1% 2%;
-  align-content: center;
-} */
+}
 .meta-flex {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: flex-start;
-  /* border-style: solid; */
 }
 .flex-column {
   flex-flow: column nowrap;
@@ -41,7 +27,6 @@ body, html {
   flex-grow: 1;
   flex-basis: 33%;
   padding: 1% 2%;
-  /* border-style: solid; */
 }
 .form {
   margin: auto;
@@ -49,11 +34,7 @@ body, html {
   flex-direction: column;
   width: 90%;
   padding: 0 3% 4% 2%;
-<<<<<<< HEAD
-  background-color: #eff2c0;
-=======
   background-color: #EFF2C0;
->>>>>>> 90a81baaeafb6d3189be4e0e60ef120cd588b00a
 }
 #name-form {
   background-color: #4CA2A9;
@@ -74,11 +55,7 @@ body, html {
 .messages {
   max-height: 45vh;
   overflow: auto;
-<<<<<<< HEAD
-  background-color: #eff2c0;
-=======
   background-color: #EFF2C0;
->>>>>>> 90a81baaeafb6d3189be4e0e60ef120cd588b00a
   width: 95%;
   margin: 0 auto 1% auto;
   padding: 0;
@@ -110,9 +87,6 @@ body, html {
 }
 .button-div {
   margin-top: 2%;
-}
-.button {
->>>>>>> 90a81baaeafb6d3189be4e0e60ef120cd588b00a
 }
 .button:hover {
   box-shadow: 0 0 .2vw .2vw #385969;
