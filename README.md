@@ -25,6 +25,6 @@ Spoti-box is a chat and music application that can be used to chat and select mu
 
 # Links:
 
-Repo: 
-Deployment: 
+* Repo: 
+* Deployment: 
 =======
