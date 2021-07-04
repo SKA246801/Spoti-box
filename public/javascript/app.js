@@ -2,8 +2,6 @@ const APIController = (function() {
 
   const clientId = 'fe69cc20a6e74584bce6cb310e7ad534';
   const clientSecret = 'ceecd22d58cc4f0abf0bfed4b420d9ea';
-  var redirect_uri = "https://localhost:3001"
-
 
   // private methods
   const _getToken = async () => {
@@ -87,7 +85,7 @@ const APIController = (function() {
       }),
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + 'BQA4z3cmMh8d8pJLWfoqEZaRQkGrhviNp1FTg6sYoqVuAB2AeBPsacv2gnex9nrbkSPQNRkpNDQFA9AvgOC5SNuEXO5Dz0kHIeYyh3rERk2qyBrIq5Hdc8HmRXj-3DztELr5vUqo7ASVrkrpGLhR7mtRmtsHpjZpJugx-BW0sdBVlvJwDRkHdv5apC6aYpZiVVk6-JqBSoYCcp3-XupdJURmWE1tyhe0TNg41kjlSpANhuAC8iGx6xlcHSk'
+        'Authorization': 'Bearer ' + 'BQCdwwsw3fwAAvPc7kqSSQx_01ZwnFWqBgh_rBSD7Ib70MLPDVFp13orepQ37rw7ss8vtore-8_t6giK9PdCeKzLFqwCNQF50w5pMpGNi0YkGeUqLzqyNCrZQMLLwRr_iH5lqyWHH3-GwUx5nXN9mKw6cROQ90dJ5FTEBhYVKOVxbInGzpboN9f5JDKqpY9XDjZk_4YFcCzYxDFfgrD3aDzhEk-zme3iht2UbDz2AeeoI3zGlQjs0mwCZAU'
 
       }
     })
@@ -105,7 +103,7 @@ const APIController = (function() {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + 'BQD6yRbI5KDy4PBiHh1FyFgsrb5QBmAnhignDDjQHJKr_Ybkrf0iJmwl70POWbNexICJSV2Wheu5As5E1F6c1He-Ir8OwPCfuaAFOUZkYPkjP-SCqZn9gk8HKt8dZbSkwJVSf0fGmOLNtOcj4X1g8S6GVtwqsOb7jLS_Pgsd6rmCNLK1PM3lsbgMF_0LZKL8aygPg685cRRkGXJCz5aqvAAAdeL7tBK7j-w3yyzH0r3Q5SoI00WtWeWlWYc'
+        'Authorization': 'Bearer ' + 'BQCs-IvOoqayeiVp4RG62rank7F6L-284GyEAQHYmifQ0zkhmuJgG5tK7_DH6KnrMZRXLzy2EKj3uQaIof1d4reYZ9D2hcfDlWFfEKfKwwTgPJG4L2cL3E8PjN5pro22S31VDkvQpoSI0Uoh4lgh1rwUBLRL5aGzAsYKSHA46rPx42xiFxwxABzSgBkPv-lh07hgaxs-eczzrwnXGIflGbX7m4vY5CIyKj5QElZ4ilFxeCMGJtiCOqsyjiU'
 
       },
       body: JSON.stringify({
@@ -310,7 +308,7 @@ const APPController = (function(UICtrl, APICtrl) {
   })
 
 
-  playlists = []
+
   uris = []
 
   // create song selection click event listener
@@ -339,23 +337,14 @@ const APPController = (function(UICtrl, APICtrl) {
       uris.push(track.uri)
       APICtrl.addSongs(id, uris)
     });
-
-
-
-
-
-    // console.log(playlists.push(track.name))
-    // console.log(playlists)
   });
 
   return {
     init () {
-      console.log('App is starting');
       loadGenres();
     }
   }
 
 })(UIController, APIController);
 
-// will need to call a method to load the genres on page load
 APPController.init();
